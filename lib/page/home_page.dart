@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.black,
         onPressed: () => showDialog(
           context: context,
-          child: AddTodoDialogWidget(),
+          builder: (context) => AddTodoDialogWidget(),
           barrierDismissible: false,
         ),
         child: Icon(Icons.add),
