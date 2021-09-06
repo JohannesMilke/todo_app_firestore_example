@@ -27,7 +27,7 @@ class Todo {
         id: json['id'],
         isDone: json['isDone'],
       );
-
+// this method is >>>> num one to convert Todo class to json because firebase cant understand the objects in Todo class
   Map<String, dynamic> toJson() => {
         'createdTime': Utils.fromDateTimeToJson(createdTime),
         'title': title,
